@@ -58,7 +58,7 @@ const Testimonials = () => {
       <div className="app__testimonials-brands app__flex">
         {brands.map((brand) => (
           <motion.div
-            whileInMotion={{opacity: [0,1 ]}}
+            whileInView={{opacity: [0,1 ]}}
             transition={{duration: 0.5, type:"tween"}}
             key={brand._id}
           >
