@@ -13,19 +13,19 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <BsGithub />
+        <a href="https://github.com/gercamjr" target="_blank"><BsGithub /></a>
       </div>
       <div>
-        <FcBusinessman />
+        <a href="https://gercamjr.github.io/digital_business_card" target="_blank"><FcBusinessman /></a>
       </div>
       <div>
-        <BsLinkedin />
+        <a href="https://www.linkedin.com/in/gera-camo-jr/" target="_blank"><BsLinkedin /></a>
       </div>
       <div>
-        <BsTwitter />
+        <a href="https://www.twitter.com/CamorlingaJr" target="_blank"><BsTwitter /></a>
       </div>
       <div>
-        <BsFacebook />
+        <a href="https://www.facebook.com/geracamojr" target="_blank"><BsFacebook /></a>
       </div>
     </div>
   );
