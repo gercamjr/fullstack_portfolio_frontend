@@ -35,8 +35,19 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
+import coder from '../assets/coder.png'
+import coding from '../assets/coding.png'
+import responsivedesign from '../assets/responsivedesign.png'
+import webcoder from '../assets/webcoder.png'
+import workflow from '../assets/workflow.jpg'
+
 export default {
   email,
+  coder,
+  workflow,
+  responsivedesign,
+  coding,
+  webcoder,
   mobile,
   api,
   cpp,
