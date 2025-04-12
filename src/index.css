@@ -1,18 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Futuristic+Font:wght@400&family=Exo:wght@400&family=Poppins:wght@400&family=Montserrat:wght@400&display=swap');
 :root {
-    --font-base: "DM Sans", sans-serif;
-    --primary-color: #edf2f8;
-    --secondary-color: #313bac;
-    --black-color: #030303;
-    --lightGray-color: #e4e4e4;
-    --gray-color: #6b7688;
-    --brown-color: #46364a;
-    --white-color: #ffffff;
+  --heading-font: 'Orbitron', 'Exo', sans-serif;
+  --body-font: 'Poppins', 'Montserrat', sans-serif;
+  --primary-color: #1a1a2e;
+  --secondary-color: #16213e;
+  --neon-teal: #00ffcc;
+  --neon-pink: #ff1969;
+  --neon-cyan: #66fcf1;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }

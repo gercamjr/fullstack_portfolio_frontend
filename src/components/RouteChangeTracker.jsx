@@ -1,16 +1,14 @@
 import React from 'react'
-import {withRouter} from 'react-router-dom'
 import ReactGa from 'react-ga'
 
-function RouteChangeTracker( {history}) {
-
+function RouteChangeTracker({ history }) {
+  if (history) {
     history.listen((location, action) => {
-        ReactGA.set({page: location.pathname})
-        ReactGA.pageview(location.pathname)
+      ReactGa.set({ page: location.pathname })
+      ReactGa.pageview(location.pathname)
     })
-  return (
-    <div></div>
-  )
+  }
+  return <div></div>
 }
 
-export default withRouter(RouteChangeTracker)
+export default RouteChangeTracker
