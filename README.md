@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a modern, responsive portfolio website built with React for the frontend and Sanity for the backend.
+
+## Overview
+
+The frontend is a single-page application created with [Create React App](https://github.com/facebook/create-react-app). It showcases personal information, skills, work experience, and projects. The application is designed to be visually appealing with animations using `framer-motion`.
+
+The content for the portfolio is managed through a headless CMS, [Sanity.io](https://www.sanity.io/). This allows for easy updates to the portfolio content without needing to change the code.
+
+## Getting Started
+
+To get the frontend running locally:
+
+1.  **Clone the repository** (if you haven't already).
+2.  **Install dependencies**:
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**:
+
+    ```bash
+    npm start
+    ```
+
+    This runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Project Structure
+
+The frontend codebase is organized as follows:
+
+- `src/`: Contains all the source code.
+  - `assets/`: Static assets like images and logos.
+  - `components/`: Reusable UI components (e.g., `Navbar`, `SocialMedia`).
+  - `constants/`: Exports for images and other constant values.
+  - `container/`: Larger components that represent sections of the page (e.g., `About`, `Footer`, `Work`).
+  - `wrapper/`: Higher-Order Components used for wrapping sections.
+  - `client.js`: Configuration for the Sanity client to fetch data.
+  - `App.js`: The main application component that assembles the different sections.
+  - `index.js`: The entry point of the application.
+
+## Connecting to Sanity
+
+This project connects to a Sanity backend to fetch all its content. The connection details are configured in `src/client.js`. You will need to have a Sanity project with the corresponding schema and data.
+
+The backend for this project can be found in the `fullstack_portfolio_backend` directory, which contains the Sanity Studio setup.
 
 ## Available Scripts
 
@@ -8,63 +53,18 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in the development mode.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder.
 
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This command will remove the single build dependency from your project and copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them.
